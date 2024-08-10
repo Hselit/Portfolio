@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+body{
+    background-color:black;
+}
+</style>
+</head>
+
+<body>
+<canvas id="can"></canvas>
+<script>
+    var canvas = document.getElementById("can");
+var ctx = canvas.getContext("2d");
+
+canvas.width= window.innerWidth;
+canvas.height=window.innerHeight;
+
+const mouse={
+	x:null,
+	y:null,
+	}
+	
+	
+function drwa(){
+
+ctx.beginPath();
+ctx.fillStyle="blue";
+ctx.strokeStyle="red";
+ctx.lineWidth=5;
+ctx.arc(mouse.x,mouse.y,15,0,Math.PI *2);
+ctx.stroke();
+ctx.fill();
+}
+
+canvas.addEventListener('mousemove',function(event){
+	mouse.x=event.x;
+	mouse.y=event.y;
+	drwa();
+	//ctx.clearRect(0,0,canvas.width,canvas.height);
+});
+
+function animate()
+{
+	//ctx.clearRect(0,0,canvas.width,canvas.height);
+	drwa();
+	requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+</body>
+</html>

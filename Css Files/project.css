@@ -1,0 +1,212 @@
+/* General Styling */
+.about-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.navbar{
+     border-bottom: 2px solid #ddd;
+}
+
+.about-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Project Container Styling */
+.project-container {
+    display: flex;
+    /* border: 1px solid #666; */
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0; /* Add top and bottom margin to create gaps between cards */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 2, 0.2);
+    transition: transform 0.3s ease;
+    /* Set a consistent height to ensure similar size */
+    height: auto; 
+    width: 80%;
+    overflow: hidden; /* Ensure no content overflows the card */
+}
+
+.project-container:hover {
+    transform: translateY(-5px);
+}
+
+#logo{
+    font-weight: bold;
+    font-family: 'Silkscreen', cursive;
+}
+
+.project-details {
+    flex: 1;
+    padding-right: 20px;
+    text-align: justify; /* Justify text for the description */
+    text-indent: 20px; /* Add indent to the first line of each paragraph */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.project-details h4 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.project-details a{
+    color: black;
+    text-decoration: underline;
+}
+
+.project-details a:hover{
+    text-decoration: none;
+    color: #926402;
+}
+
+.project-details p {
+    font-size: 18px;
+    /* word-spacing: 5px; */
+    line-height: 40px;
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    width: 100%; /* Ensure the image covers the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    display: block; /* Remove any default inline spacing issues */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.project-container:hover .project-image img {
+    transform: scale(1.05); /* Slightly scale up image on hover */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    padding: 25px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.footer .line {
+    border-top: 1px solid #666;
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+.footer-item {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #926402;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Space above the social icons */
+}
+
+.footer .social-icons a {
+    color:  #f4f4f4; /* Default color for icons */
+    margin: 0 15px; /* Margin between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 2rem; /* Increase icon size */
+}
+
+
+.footer-small {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px; /* Adjust margin for tablets */
+        width: 90%; /* Adjust width for tablets */
+    }
+
+    .project-details {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center; /* Center text on tablets */
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto; /* Ensure the image maintains its aspect ratio */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px; /* Adjust margin for mobile */
+        width: 95%; /* Adjust width for mobile */
+    }
+
+    .project-details {
+        padding-right: 0;
+        margin-bottom: 10px;
+        text-align: center; /* Center text on mobile */
+    }
+
+    .project-details p {
+        font-size: 16px; /* Adjust font size for mobile */
+        line-height: 25px;
+        
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto; /* Ensure the image maintains its aspect ratio */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Full Width on Larger Screens */
+@media (min-width: 1200px) {
+    .project-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .project-image img {
+        max-width: 100%; /* Ensure the image takes up the full width */
+    }
+}

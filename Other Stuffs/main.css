@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+#contact{
+    color: whitesmoke;
+    text-align: right;
+    margin-right: 70px;
+    padding: 30px;
+   
+}
+
+#header{
+    font-size: 100px;
+    color: aquamarine;
+}

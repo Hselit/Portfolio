@@ -1,0 +1,330 @@
+<html>
+<head>
+  <title>Portfolio</title>
+    <link rel="icon" href="./fav.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <style> 
+	body{
+    background-color:black;
+	}
+	
+	
+.neon{
+	font-size:1.5rem;
+	color:var(--clr-neon);
+	cursor:pointer;
+	text-decoration:none;
+	border:currentColor .125em solid;
+	border-radius:0.25em;
+	display:inline-block;
+	background-color:black;
+	text-shadow: 0 0 1em white;
+	box-shadow: inset 0 0 1em 0 currentColor,0 0 1em 0 currentColor;
+	position:relative;
+	}
+
+
+.neon:hover,.neon:focus{
+	background-color:var(--clr-neon);
+	color:var(--clr-bg);
+	text-shadow:none;
+	box-shadow: 0 0 2em 0.5em currentColor;
+	
+	}
+	.game{
+		font-size:1rem;
+		color:pink;
+		cursor:pointer;
+		text-decoration:none;
+		border:currentColor .125em solid;
+		border-radius:0.25em;
+		display:inline-block;
+		background-color:black;
+		text-shadow: 0 0 1em pink;
+		box-shadow: inset 0 0 1em 0 currentColor,0 0 1em 0 currentColor;
+		position:relative;
+		opacity:0;
+		}
+	.game:hover{
+		opacity:1;
+		transition:opacity 2s linear;
+		box-shadow: 0 0 1em 0.5em currentColor;
+		}
+		
+	#f{
+		display:flex;
+		
+		justify-content:center;
+		}
+	.card{
+		margin-left:110px;
+		border-radius:5px;
+		display:flex;
+		}
+
+
+	.card-body a{
+		margin-left:30%;
+		}
+		
+	#follow{
+		color:#1cff10;
+		}
+   
+      h3{
+        font-size: 35px;
+        text-align: center;
+        margin: 30px;
+        color: white;
+      }
+        h2{
+            color: aliceblue;
+            margin-left: 20px;
+        }
+
+      .alert-success{
+        text-align: center;
+		width:100%;
+		height:10%;
+      }
+      
+      #content{
+        color: whitesmoke;
+        margin-left: 30px;
+        margin-top: 100px;
+        justify-content: center;
+        line-height: 10px;
+        font-size: 50px;
+       
+      }
+
+      .animate__fadeInLeftBig{
+        font-size: 60px;
+        font-weight: 20px;
+      }
+
+      .animate__fadeInRightBig{
+        font-size: 30px;
+        margin-left: 20px;
+      }
+
+      .animate__bounceIn{
+        line-height: 2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 20px;
+      }
+
+      button{
+        padding:8px 20px;
+        background: #0c5ce3;
+        border: 0;
+        outline: none;
+        border-radius: 20px;
+        color: #fff;
+        margin-left: 80px;
+        visibility: Visible;
+      }
+
+      #contact{
+                margin-top: 200px;
+                margin-left: 1000px;
+                padding: 30px;
+                background-color: blue;
+                
+            }
+
+       <!--     #contact:hover{
+                width: 100%;
+                text-align: center;
+                transition-duration: 2s;
+                margin-left: 0px;
+                transition-delay: ms;
+            }
+-->
+
+        #contact a{
+            text-decoration: none;
+            color:#fff;
+            font-size: 15px;
+            margin-left: 20px;
+                
+        }
+
+		#but{
+			cursor:pointer;
+			}
+        #but a{
+            text-decoration: none;
+            color: whitesmoke;
+          }
+
+        .animate__zoomIn{
+           float: left;
+           margin-left: 800px;
+           margin-top: -300px;
+           border-radius: 50px;
+        }
+
+          ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align:right;
+		  
+        }
+
+        li {
+          display: inline;
+          font-size: 20px;
+          color: #ffff;
+			margin:1rem;
+		  cursor:pointer;
+			
+        }
+		li a:hover{
+			text-decoration:none;
+			
+			}
+          
+      .blank{
+		width:100%;
+		height:80%;
+		}
+		.first{
+		width:100%;
+		height:100%;
+		}
+    </style>
+     
+</head>
+
+<body>
+
+    <div class="alert alert-success" role="alert">
+        <h6 class="animate__animated animate__flash"><p id="greeting" class="animate__flash"></p></h6>
+      </div>
+	  <section class"first">
+      <div>
+      <h4 class="animate__animated animate__lightSpeedInRight animate__delay-1s" id="port" >Portfolio.</h4>
+      <ul id="new">
+		<li><a href="can.html" ><button class="game">Game</button></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="#about">About</a></li>
+		
+      </ul>
+    </div>
+	
+    <h3 id="name" class="animate__animated animate__hinge animate__delay-2s">Welcome to My Portfolio</h3>
+    <div id="content">
+        <h2 class="animate__animated animate__fadeInLeftBig animate__delay-3s">Tilesh T K</h2>
+        <h4 class="animate__animated animate__fadeInRightBig animate__delay-4s">Engineeering Graduate</h4>
+        <h5 class="animate__animated animate__bounceIn animate__delay-5s">Person with a hungry for knowledge, 
+            and driven to explore new horizons<br> in life, seeking opportunities to contribute and grow in a dynamic<br> professional environment.</h5>
+    <br><br>
+    </div>
+	
+		<a href="https://drive.google.com/file/d/1wZoGrzpW7HnrCqa3iPBtLd0vRtBgDS5T/view?usp=sharing" target="_blank"><button class="neon">Resume
+	</button></a>
+	
+        <div id="g">
+          <img class="animate__animated animate__zoomIn animate__delay-5s" src="./coffeecode.gif" alt="Programmin_img">
+
+        </div>
+		       </section>
+		<br><br><br><br><br><br><br><br><br>
+		<h2 id="follow"> FOLLOW ME ON </h2>
+		<br><br>
+		<section id="f">
+		<div class="card" style="width: 18rem;">
+		  <img src="instagram.png" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h4 class="card-title">
+			<img src="i.png" height=40px width=40px>
+			Instagram</h4>
+			<a href="https://www.instagram.com/_shutter_bug__06/" class="btn btn-primary">View More</a>
+		  </div>
+		</div>
+		<div class="card" style="width: 18rem;">
+		  <img src="git.png" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h4 class="card-title">
+			<img class="card-text" src="g.png" height=40px width=40px>
+			Github</h4>
+			<a href="https://github.com/Hselit" class="btn btn-primary">View More</a>
+		  </div>
+		</div>
+		<div class="card" style="width: 18rem;">
+		  <img src="linkedin.png" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h4 class="card-title">
+			<img class="card-text"  src="l.png" height=40px width=40px>
+			linkedin</h4>
+			<a href="https://www.linkedin.com/in/tilesh-t-k/" class="btn btn-primary">View More</a>
+		  </div>
+		</div>
+		</section>
+
+		<br><br><br><br><br><br><br><br><br>
+		<section class="blank">
+		</section>
+        <div id="footer">
+            <div id="contact" class="">
+            <h2>More Ways to Reach out</h2><br>
+            <a href="https://www.linkedin.com/in/tilesh-t-k-764a03248/" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i> LinkedIn &nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <a href="https://github.com/Hselit" target="_blank">
+                <i class="fab fa-github fa-2x"></i> GitHub &nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <a href="https://www.instagram.com/_shutter_bug__06/" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i> Instagram &nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            </div>
+            </div>
+
+
+    <script>
+        let timeout = setTimeout(alertFunc, 1000);
+        var greet = document.getElementsByClassName("alert-success");
+        
+        function alertFunc() {
+            
+                    var d = new Date();
+        var greetingElement = document.getElementById("greeting");
+        
+        if (d.getHours() < 12)
+            greetingElement.textContent = "Good Morning..";
+        else if (d.getHours() < 18)
+            greetingElement.textContent = "Good Afternoon !!";
+        else
+            greetingElement.textContent = "Good Evening..!";
+        
+        console.log("Greeted..");
+        }
+
+        let i = setTimeout(al,2000);
+                function al() {
+                var stud = document.getElementById("port");
+                    stud.style.fontSize="50px";
+                    console.log("...");
+                }
+
+
+                let ik = setTimeout(ale,5000);
+                function ale() {
+                var st = document.getElementById("but");
+                    st.style.visibility="visible";
+                    console.log("Button Visible")
+                }
+
+    </script>
+
+</body>
+</html>
+

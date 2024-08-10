@@ -1,0 +1,369 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F3F3F3;
+}
+
+.navbar {
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Align nav items to the right */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Default text color */
+    padding: 0 10px; /* Horizontal padding for nav items */
+    position: relative; /* For positioning the separator */
+}
+
+/* Add vertical bar separator after each nav item */
+.navbar-nav .nav-link:not(:last-child)::after {
+    content: '|'; /* Vertical bar separator */
+    color: #333; /* Color of the separator */
+    padding-left: 10px; /* Space between the link text and the separator */
+    padding-right: 10px; /* Space between the separator and the next link */
+}
+.navbar-nav .nav-link:not(:last-child)::after {
+    content: '|'; /* Vertical bar separator */
+    color: #333; /* Color of the separator */
+    padding-left: 10px; /* Space between the link text and the separator */
+    padding-right: 10px; /* Space between the separator and the next link */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #926402; /* Text color on hover */
+}
+
+/* Ensure this is in your CSS */
+.navbar-collapse {
+    display: flex; /* Ensure the menu is displayed as a flex container */
+    flex-direction: column; /* Stack menu items vertically */
+    justify-content: flex-start; /* Align items at the start of the container */
+}
+
+.navbar-collapse.collapse {
+    display: none; /* Hide collapse container by default */
+}
+
+.navbar-collapse.show {
+    display: flex; /* Show the menu when toggled */
+}
+
+#logo {
+    margin-right: auto; /* Push logo to the left end */
+    font-size: 18px; /* Font size for the logo */
+    font-weight: bold; /* Font weight for the logo */
+    color: #333; /* Text color for the logo */
+    font-family: 'Silkscreen', cursive; /* Apply the Silkscreen font */
+}
+
+#profile-image {
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally within its container */
+}
+
+.container.mt-5 {
+    padding: 80px 20px; /* Add some horizontal padding */
+}
+
+.profile-text {
+    margin-top: 20px; /* Space between the image and the text */
+    max-width: 700px; /* Restrict text width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ensure paragraph text is justified */
+p {
+    margin-top: 20px;
+    font-size: 1.25rem; /* Font size for the paragraph */
+    color: #666; 
+    letter-spacing: 1.35px;
+    text-indent: 20px;
+    text-align: justify; /* Ensure text is justified */
+    word-spacing: 1px;
+    line-height: 33px;
+}
+
+/* Hamburger menu styling */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBkPSJNMSw1SDE3VjVIMiIvPjwvc3ZnPg==');
+}
+
+.empty {
+    width: 100%;
+    height: 20vh;
+}
+
+.line {
+    font-weight: bold;
+    color: #926402;
+}
+
+/* Footer Styles */
+.footer {
+    width: 90%;
+    margin-left: 5%;
+    padding: 20px 0; /* Padding for top and bottom */
+    border-top: 1px solid #ddd; /* Optional border at the top */
+    text-align: center; /* Center align text */
+    /* width: 100%; Full width of the footer */
+    position: relative; /* Ensure footer stays at the bottom */
+    bottom: 0; /* Align footer to the bottom of its container */
+}
+
+.footer hr {
+    border: 0; /* Remove default border */
+    /* border-top: 1px solid #FAEAF5; Custom color for the hr line */
+    margin: 20px auto; /* Margin around the hr line */
+    width: 80%; /* Width of the hr line */
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Wraps the items if necessary */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.footer .footer-item {
+    margin: 10px; /* Margin around each footer item */
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 150px; /* Minimum width for each item */
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Space above the social icons */
+}
+
+.footer .social-icons a {
+    color: #333; /* Default color for icons */
+    margin: 0 15px; /* Margin between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 2rem; /* Increase icon size */
+}
+
+.footer .social-icons a:hover {
+    color: #926402; /* Color on hover */
+}
+
+/* Font size for small text in footer */
+.footer .footer-small {
+    font-size: 0.875rem; /* Smaller font size */
+    color: #666; /* Color for small text */
+}
+
+/* Styling for the footer links */
+.footer a {
+    color: #333; /* Default color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    color: #926402; /* Color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+    .container.mt-5 {
+        padding: 0 10px;
+    }
+
+    .profile-text {
+        margin-top: 10px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 2.5vh;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    .empty {
+        height: 30vh;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for navbar menu on small screens */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px; /* Add padding for better spacing */
+        text-align: center; /* Center-align text */
+        border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+    }
+
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none; /* Remove bottom border from the last item */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #926402; /* Text color on hover for small screens */
+    }
+
+    .navbar-nav .nav-link:not(:last-child)::after {
+        content: '|'; /* Vertical bar separator */
+        color: #333; /* Color of the separator */
+        padding-left: 10px; /* Space between the link text and the separator */
+        padding-right: 10px; /* Space between the separator and the next link */
+    }
+    .profile-img{
+    margin-bottom: 20px;
+     /* background-color: black;    */
+    }
+}
+
+/* Tablet Specific Styles */
+@media (min-width: 769px) and (max-width: 980px) {
+    .navbar-toggler {
+        background-color: #f8f8f8; /* Background color for the hamburger button */
+        border: 1px solid #ddd; /* Border for the hamburger button */
+        border-radius: 5px; /* Rounded corners for the hamburger button */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBkPSJNMSw1SDE3VjVIMiIvPjwvc3ZnPg==');
+    }
+
+    .navbar-collapse {
+        background-color: #fff; /* Background color for the collapsed menu */
+        border: 1px solid #ddd; /* Border around the collapsed menu */
+        border-radius: 5px; /* Rounded corners for the collapsed menu */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem; /* Slightly larger font size for better readability */
+        padding: 15px; /* Padding for better spacing */
+        text-align: left; /* Align text to the left */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #926402; /* Text color on hover */
+    }
+    
+    .nav-item:hover{
+        color: #926402;
+    }
+
+    .navbar-nav .nav-link:not(:last-child)::after {
+        content: '|'; /* Vertical bar separator */
+        color: #333; /* Color of the separator */
+        padding-left: 10px; /* Space between the link text and the separator */
+        padding-right: 10px; /* Space between the separator and the next link */
+    }
+
+    .profile-img{
+     width: auto;   
+        
+    }
+   
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styling */
+.about-section {
+    padding: 60px 0;
+    background-color: #dcd7d7;
+    text-align: center; /* Center text and image */
+}
+
+.profile-img {
+    width: 180%; /* Keep larger width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the image is circular */
+    margin-left: -200px; /* Adjust positioning */
+}
+
+/* Text and Content Styling */
+.about-section h2 {
+    font-size: 2.5rem; /* Font size for larger screens */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem; /* Font size for larger screens */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 0; /* Adjust padding for smaller screens */
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 30px 0; /* Further adjust padding for mobile screens */
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .profile-img {
+        width: 120px; /* Adjust image width for mobile screens */
+        height: 120px; /* Adjust image height to maintain aspect ratio */
+        margin-left: 0; /* Reset margin for better alignment */
+    }
+}
